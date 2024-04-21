@@ -1,2 +1,10 @@
 com\jcaido\TallerH2Render\config\OpenApiConfig.class
+com\jcaido\TallerH2Render\models\CodigoPostal$CodigoPostalBuilder.class
+com\jcaido\TallerH2Render\models\Propietario.class
+com\jcaido\TallerH2Render\controller\CodigoPostalController.class
 com\jcaido\TallerH2Render\TallerH2RenderApplication.class
+com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalDTO$CodigoPostalDTOBuilder.class
+com\jcaido\TallerH2Render\models\CodigoPostal.class
+com\jcaido\TallerH2Render\repositories\CodigoPostalRepository.class
+com\jcaido\TallerH2Render\models\Propietario$PropietarioBuilder.class
+com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalDTO.class

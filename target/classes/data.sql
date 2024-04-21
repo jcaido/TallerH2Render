@@ -9,13 +9,13 @@ insert into codigos_postales (codigo_postal, localidad, provincia) values ('3266
 insert into codigos_postales (codigo_postal, localidad, provincia) values ('44321', 'Martos', 'Jaen');
 insert into codigos_postales (codigo_postal, localidad, provincia) values ('41222', 'Andujar', 'Jaen');
 
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio,codigo_postal_id) values ('Cristobal', 'Rosa', 'Arjona', '34019852R', 'Pasaje San Vicente, 2', 1);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Antonio', 'Garcia', 'Arjona', '35016852R', 'Membrilla, 23', 2);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Miguel Angel', 'Perez', 'Arjona', '34009952R', 'Saladilla, 5', 1);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Jose Antonio', 'Carrasco', 'Arjona', '34519852Y', 'Empedrada, 76', 3);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Alberto', 'Lopez', 'Arjona', '34519152G', 'Carreras, 8', 2);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Rafael', 'Sanchez', 'Arjona', '34045862F', 'Almirante, 6', 1);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Juan', 'Lucena', 'Arjona', '34219855T', 'Gallos, 34', 7);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Pedro', 'Barranco', 'Arjona', '24039852W', 'Estudiantes, 65', 1);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Pablo', 'Varo', 'Arjona', '31239852O', 'Torito, 7', 1);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Mario', 'Perez', 'Arjona', '12319852P', 'Llano, 89', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio,codigo_postal_id) values ('Cib', 'Ros', 'Arna', '11111111A', 'Pe Sa Vnte, 2', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Atio', 'Gca', 'Arna', '22222222B', 'Mrila, 23', 2);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Mgul Anel', 'Pez', 'Ana', '33333333C', 'Salalla, 5', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Je Aonio', 'Casco', 'Ana', '44444444D', 'Emada, 76', 3);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Alto', 'Lez', 'Arna', '55555555E', 'Creras, 8', 2);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Rel', 'Saez', 'Ana', '66666666F', 'Alante, 6', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Jan', 'Lucna', 'Ana', '77777777G', 'Gaos, 34', 7);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Pro', 'Banco', 'Arna', '88888888H', 'Esiantes, 65', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Plo', 'Vao', 'Ana', '99888888I', 'Toto, 7', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Mio', 'Pez', 'Arna', '99999999J', 'Llo, 89', 1);
