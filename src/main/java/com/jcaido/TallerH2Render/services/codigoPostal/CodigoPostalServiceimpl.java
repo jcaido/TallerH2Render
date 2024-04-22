@@ -2,6 +2,8 @@ package com.jcaido.TallerH2Render.services.codigoPostal;
 
 import com.jcaido.TallerH2Render.DTOs.codigoPostal.CodigoPostalCrearDTO;
 import com.jcaido.TallerH2Render.DTOs.codigoPostal.CodigoPostalDTO;
+import com.jcaido.TallerH2Render.exceptions.BadRequestModificacionException;
+import com.jcaido.TallerH2Render.exceptions.ResourceNotFoundException;
 import com.jcaido.TallerH2Render.models.CodigoPostal;
 import com.jcaido.TallerH2Render.repositories.CodigoPostalRepository;
 import org.modelmapper.ModelMapper;
@@ -61,31 +63,84 @@ public class CodigoPostalServiceimpl implements CodigoPostalService{
 
     @Override
     public CodigoPostalDTO findById(Long id) {
-        return null;
+        Optional<CodigoPostal> codigoPostal = codigoPostalRepository.findById(id);
+
+        if (!codigoPostal.isPresent())
+            throw new ResourceNotFoundException("Codigo Postal", "id", String.valueOf(id));
+
+        CodigoPostalDTO codigoPostalEncontrado = modelMapper.map(codigoPostal, CodigoPostalDTO.class);
+
+        return codigoPostalEncontrado;
     }
 
     @Override
     public CodigoPostalDTO findByCodigo(String codigo) {
-        return null;
+        Optional<CodigoPostal> codigoPostal = codigoPostalRepository.findByCodigo(codigo);
+
+        if (!codigoPostal.isPresent())
+            throw new ResourceNotFoundException("Codigo Postal", "codigo", codigo);
+
+        CodigoPostalDTO codigoPostalEncontrado = modelMapper.map(codigoPostal, CodigoPostalDTO.class);
+
+        return codigoPostalEncontrado;
     }
 
     @Override
     public List<CodigoPostalDTO> findByProvincia(String provincia) {
-        return null;
+        List<CodigoPostal> codigosPostales = codigoPostalRepository.findByProvincia(provincia);
+
+        return codigosPostales.stream().map(codigoPostal-> modelMapper.map(codigoPostal, CodigoPostalDTO.class)).toList();
     }
 
     @Override
     public CodigoPostalDTO findByLocalidad(String localidad) {
-        return null;
+        Optional<CodigoPostal> codigoPostal = codigoPostalRepository.findByLocalidad(localidad);
+
+        if (!codigoPostal.isPresent())
+            throw new ResourceNotFoundException("Codigo Postal", "localidad", localidad);
+
+        CodigoPostalDTO codigoPostalEncontrado = modelMapper.map(codigoPostal, CodigoPostalDTO.class);
+
+        return codigoPostalEncontrado;
     }
 
     @Override
     public String deleteById(Long id) {
-        return null;
+        if (!codigoPostalRepository.existsById(id))
+            throw new ResourceNotFoundException("Codigo Postal", "id", String.valueOf(id));
+
+        //if (propietarioService.obtenerPropietariosPorCodigoPostalHQL(id).size() > 0)
+        //    throw new ResponseStatusException(HttpStatus.CONFLICT, "Existen propietarios relacionados con ese codigo postal");
+
+        codigoPostalRepository.deleteById(id);
+
+        String respuesta = "Codigo Postal eliminado con exito";
+
+        return respuesta;
     }
 
     @Override
     public CodigoPostalDTO modificarCodigoPostal(CodigoPostalDTO codigoPostalDTO) {
-        return null;
+        if (codigoPostalDTO.getId() == null)
+            throw new BadRequestModificacionException("Codigo Postal", "id");
+
+        if (!codigoPostalRepository.existsById(codigoPostalDTO.getId()))
+            throw new ResourceNotFoundException("Codigo Postal", "id", String.valueOf(codigoPostalDTO.getId()));
+
+        if (!codigoPostalValidacionesUniqueService.validacionUniqueLocalidad(codigoPostalDTO))
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "La localidad ya existe");
+
+        if (!codigoPostalValidacionesUniqueService.validacionUniqueCodigo(codigoPostalDTO))
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "El codigo del Codigo Postal ya existe");
+
+        CodigoPostal codigoPostal = codigoPostalRepository.findById(codigoPostalDTO.getId()).get();
+        codigoPostal.setCodigo(codigoPostalDTO.getCodigo());
+        codigoPostal.setLocalidad(codigoPostalDTO.getLocalidad());
+        codigoPostal.setProvincia(codigoPostalDTO.getProvincia());
+
+        CodigoPostal codigoPostalModificado = codigoPostalRepository.save(codigoPostal);
+        CodigoPostalDTO codigoPostalModificadoDTO = modelMapper.map(codigoPostalModificado, CodigoPostalDTO.class);
+
+        return codigoPostalModificadoDTO;
     }
 }
