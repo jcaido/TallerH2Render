@@ -6,6 +6,7 @@ import com.jcaido.TallerH2Render.exceptions.BadRequestModificacionException;
 import com.jcaido.TallerH2Render.exceptions.ResourceNotFoundException;
 import com.jcaido.TallerH2Render.models.CodigoPostal;
 import com.jcaido.TallerH2Render.repositories.CodigoPostalRepository;
+import com.jcaido.TallerH2Render.services.propietario.PropietarioService;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -21,12 +22,13 @@ import java.util.Optional;
 public class CodigoPostalServiceimpl implements CodigoPostalService{
 
     private final CodigoPostalRepository codigoPostalRepository;
-    //private final PropietarioService propietarioService;
+    private final PropietarioService propietarioService;
     private final CodigoPostalValidacionesUniqueService codigoPostalValidacionesUniqueService;
     private  final ModelMapper modelMapper;
 
-    public CodigoPostalServiceimpl(CodigoPostalRepository codigoPostalRepository, CodigoPostalValidacionesUniqueService codigoPostalValidacionesUniqueService, ModelMapper modelMapper) {
+    public CodigoPostalServiceimpl(CodigoPostalRepository codigoPostalRepository, PropietarioService propietarioService, CodigoPostalValidacionesUniqueService codigoPostalValidacionesUniqueService, ModelMapper modelMapper) {
         this.codigoPostalRepository = codigoPostalRepository;
+        this.propietarioService = propietarioService;
         this.codigoPostalValidacionesUniqueService = codigoPostalValidacionesUniqueService;
         this.modelMapper = modelMapper;
     }
@@ -109,8 +111,8 @@ public class CodigoPostalServiceimpl implements CodigoPostalService{
         if (!codigoPostalRepository.existsById(id))
             throw new ResourceNotFoundException("Codigo Postal", "id", String.valueOf(id));
 
-        //if (propietarioService.obtenerPropietariosPorCodigoPostalHQL(id).size() > 0)
-        //    throw new ResponseStatusException(HttpStatus.CONFLICT, "Existen propietarios relacionados con ese codigo postal");
+        if (propietarioService.obtenerPropietariosPorCodigoPostalHQL(id).size() > 0)
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "Existen propietarios relacionados con ese codigo postal");
 
         codigoPostalRepository.deleteById(id);
 
