@@ -19,3 +19,9 @@ insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domici
 insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Pro', 'Banco', 'Arna', '88888888H', 'Esiantes, 65', 1);
 insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Plo', 'Vao', 'Ana', '99888888I', 'Toto, 7', 1);
 insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Mio', 'Pez', 'Arna', '99999999J', 'Llo, 89', 1);
+
+insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('GRUPO PEÑA SL', 'B14995673', 'Peña Blanca, 2', 3);
+insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('TORNILLOS LA LAGUNA SL', 'B14445676', 'Calle Blanca Palima, 3', 5);
+insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('PLACAS DE PIEZAS, SL', 'B14665765', 'Las Albarizas, 5', 6);
+insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('MOTORES ORDOÑEZ', 'B14436571', 'Calle Baena, 28', 3);
+insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('COMPONENTES ELOY', 'B14005600', 'Calle las cimas, 80', 2);
