@@ -1,3 +1,4 @@
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\ProveedorRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\exceptions\GlobalExceptionHandler.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\propietario\PropietarioService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\PropietarioController.java
@@ -8,12 +9,17 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\exceptions\BadRequestModificacionException.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\codigoPostal\CodigoPostalServiceimpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\propietario\PropietarioDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\exceptions\ResourceNotFoundException.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorBusquedasDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\ProveedorController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\exceptions\ErrorDetails.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\codigoPostal\CodigoPostalValidacionesUniqueService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\propietario\PropietarioServiceImpl.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\proveedor\ProveedorServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\TallerH2RenderApplication.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalCrearDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\proveedor\ProveedorModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\propietario\PropietarioValidacionesUniqueService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\propietario\PropietarioBusquedasDTO.java
@@ -21,7 +27,12 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\propietario\PropietarioModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\config\OpenApiConfig.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\CodigoPostalController.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\proveedor\ProveedorService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\proveedor\ProveedorValidacionesUniqueService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\propietario\PropietarioCrearDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorBusquedasParcialDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\Proveedor.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\CodigoPostal.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\CodigoPostalRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\Propietario.java
