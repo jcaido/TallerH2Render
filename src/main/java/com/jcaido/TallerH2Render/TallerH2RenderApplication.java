@@ -4,6 +4,7 @@ import com.jcaido.TallerH2Render.DTOs.codigoPostal.CodigoPostalDTO;
 import com.jcaido.TallerH2Render.DTOs.pieza.PiezaDTO;
 import com.jcaido.TallerH2Render.DTOs.propietario.PropietarioDTO;
 import com.jcaido.TallerH2Render.DTOs.proveedor.ProveedorDTO;
+import com.jcaido.TallerH2Render.DTOs.vehiculo.VehiculoDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -28,7 +29,10 @@ public class TallerH2RenderApplication {
 	public ProveedorDTO proveedorDTO() {
 		return new ProveedorDTO();
 	}
-
+	@Bean
+	public VehiculoDTO vehiculoDTO() {
+		return new VehiculoDTO();
+	}
 	@Bean
 	public PiezaDTO piezaDTO() {
 		return new PiezaDTO();
