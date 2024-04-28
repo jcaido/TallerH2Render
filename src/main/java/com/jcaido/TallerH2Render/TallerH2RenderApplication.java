@@ -1,6 +1,7 @@
 package com.jcaido.TallerH2Render;
 
 import com.jcaido.TallerH2Render.DTOs.codigoPostal.CodigoPostalDTO;
+import com.jcaido.TallerH2Render.DTOs.pieza.PiezaDTO;
 import com.jcaido.TallerH2Render.DTOs.propietario.PropietarioDTO;
 import com.jcaido.TallerH2Render.DTOs.proveedor.ProveedorDTO;
 import org.modelmapper.ModelMapper;
@@ -26,6 +27,11 @@ public class TallerH2RenderApplication {
 	@Bean
 	public ProveedorDTO proveedorDTO() {
 		return new ProveedorDTO();
+	}
+
+	@Bean
+	public PiezaDTO piezaDTO() {
+		return new PiezaDTO();
 	}
 
 	public static void main(String[] args) {
