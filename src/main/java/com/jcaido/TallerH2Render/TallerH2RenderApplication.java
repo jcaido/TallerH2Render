@@ -2,6 +2,7 @@ package com.jcaido.TallerH2Render;
 
 import com.jcaido.TallerH2Render.DTOs.codigoPostal.CodigoPostalDTO;
 import com.jcaido.TallerH2Render.DTOs.pieza.PiezaDTO;
+import com.jcaido.TallerH2Render.DTOs.piezasReparacion.PiezasReparacionDTO;
 import com.jcaido.TallerH2Render.DTOs.propietario.PropietarioDTO;
 import com.jcaido.TallerH2Render.DTOs.proveedor.ProveedorDTO;
 import com.jcaido.TallerH2Render.DTOs.vehiculo.VehiculoDTO;
@@ -37,6 +38,12 @@ public class TallerH2RenderApplication {
 	public PiezaDTO piezaDTO() {
 		return new PiezaDTO();
 	}
+	@Bean
+	public PiezasReparacionDTO piezasReparacionDTO() {
+		return new PiezasReparacionDTO();
+	}
+
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(TallerH2RenderApplication.class, args);
