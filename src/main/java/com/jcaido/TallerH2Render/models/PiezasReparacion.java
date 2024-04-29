@@ -22,5 +22,9 @@ public class PiezasReparacion implements Serializable {
     @JoinColumn(name = "pieza_id")
     private Pieza pieza;
     private Integer cantidad;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @ManyToOne()
+    @JoinColumn(name = "orden_reparacion_id")
+    private OrdenReparacion ordenReparacion;
 
 }
