@@ -36,3 +36,6 @@ insert into vehiculos (matricula, marca, modelo, color, propietario_id) values (
 insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('5111UUU', 'SEAT', 'TOLEDO', 'Azul', 1);
 insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('2110YTY', 'RENAULT', 'CMAX', 'Amarillo', 6);
 insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('0499FCK', 'FORD', 'FOCUS', 'Blanco', 5);
+
+insert into mano_de_obra (fecha_nuevo_precio, precio_hora, precio_hora_actual) values ('2022-11-19', 20.5, false);
+insert into mano_de_obra (fecha_nuevo_precio, precio_hora, precio_hora_actual) values ('2023-01-01', 32.0, true);
