@@ -39,3 +39,14 @@ insert into vehiculos (matricula, marca, modelo, color, propietario_id) values (
 
 insert into mano_de_obra (fecha_nuevo_precio, precio_hora, precio_hora_actual) values ('2022-11-19', 20.5, false);
 insert into mano_de_obra (fecha_nuevo_precio, precio_hora, precio_hora_actual) values ('2023-01-01', 32.0, true);
+
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA23356', 'Arandela de cobre', 0.50);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA40001', 'polea distribucion', 25.30);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('TE23126', 'filtro aceite', 4.20);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('TE11111', 'filtro de combustible', 10.78);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('TE34000', 'filtro de aire', 9.76);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('TE32111', 'filtro de polen', 12.60);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA00000', 'volante motor', 119.25);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('R333300', 'radiador', 150.87);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA55555', 'culata', 300.45);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA44099', 'caja de cambios', 300.34);
