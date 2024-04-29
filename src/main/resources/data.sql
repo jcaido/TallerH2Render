@@ -50,3 +50,27 @@ insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA00000', '
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('R333300', 'radiador', 150.87);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA55555', 'culata', 300.45);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA44099', 'caja de cambios', 300.34);
+
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (1, 1, '2022-11-19', '2022-11-21', 'REVISAR ARRANQUE', 120000, 4.5, true, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (2, null, '2022-11-20', null, 'REVISAR RUIDO MOTOR', 23987, null, false, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (3, null, '2022-11-19', null, 'RUIDO EMBRAGUE', 165776, null, false, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (1, 1, '2022-11-22', '2022-11-23', 'CAMBIO ACEITE', 13455, 1.5, true, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (4, null, '2022-01-23', null, 'REVISAR GASES', 23987, null, false, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (2, null, '2022-11-22', null, 'FUGA DE ACEITE', 32443, null, false, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (5, null, '2022-11-25', null, 'REVISAR TERMOSTATO', 2332, null, false, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (2, null, '2022-11-19', null, 'COMPROBAR ARRANQUE', 123321, null, false, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (1, 2, '2022-11-20', '2022-11-25', 'CAMBIAR FILTRO POLEN', 54345, 2.5, true, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (2, 2, '2022-11-21', '2022-11-21', 'REVISAR BUJIAS', 22345, 2, true, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (3, 2, '2023-02-20', '2023-02-21', 'CAMBIAR FILTROS', 25987, 3, true, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (4, 2, '2023-03-10', '2023-03-11', 'VALVULA EGR', 123456, 4, true, false);
+
+insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 1, 1);
+insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 1, 2);
+insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (2, 1, 3);
+insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 2, 4);
+insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 2, 1);
+insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 4, 4);
+insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 4, 6);
+insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 6, 1);
+insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 6, 2);
+insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (2, 6, 4);
