@@ -10,9 +10,14 @@ com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionHorasDTO.class
 com\jcaido\TallerH2Render\models\EntradaPieza$EntradaPiezaBuilder.class
 com\jcaido\TallerH2Render\models\ManoDeObra$ManoDeObraBuilder.class
 com\jcaido\TallerH2Render\DTOs\piezasReparacion\PiezasReparacionCrearDTO.class
+com\jcaido\TallerH2Render\DTOs\facturaCliente\FacturaClienteDTO.class
+com\jcaido\TallerH2Render\DTOs\facturaCliente\FacturaClientesBusquedasDTO.class
 com\jcaido\TallerH2Render\DTOs\vehiculo\VehiculoBusquedasParcialDTO.class
 com\jcaido\TallerH2Render\controller\VehiculoController.class
 com\jcaido\TallerH2Render\DTOs\piezasReparacion\PiezasReparacionDTO.class
+com\jcaido\TallerH2Render\services\facturaCliente\FacturaClienteService.class
+com\jcaido\TallerH2Render\repositories\FacturaClienteRepository.class
+com\jcaido\TallerH2Render\services\facturaCliente\FacturaClienteValidacionesService.class
 com\jcaido\TallerH2Render\services\pieza\PiezaServiceImpl.class
 com\jcaido\TallerH2Render\services\propietario\PropietarioService.class
 com\jcaido\TallerH2Render\services\codigoPostal\CodigoPostalServiceimpl.class
@@ -22,6 +27,7 @@ com\jcaido\TallerH2Render\services\piezasReparacion\PiezasReparacionService.clas
 com\jcaido\TallerH2Render\controller\PropietarioController.class
 com\jcaido\TallerH2Render\services\manoDeObra\ManoDeObraServiceImpl.class
 com\jcaido\TallerH2Render\services\propietario\PropietarioValidacionesUniqueService.class
+com\jcaido\TallerH2Render\models\FacturaCliente.class
 com\jcaido\TallerH2Render\services\proveedor\ProveedorService.class
 com\jcaido\TallerH2Render\models\ManoDeObra.class
 com\jcaido\TallerH2Render\controller\PiezasReparacionController.class
@@ -56,6 +62,7 @@ com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionCierreDTO.class
 com\jcaido\TallerH2Render\DTOs\propietario\PropietarioBusquedasParcialDTO$PropietarioBusquedasParcialDTOBuilder.class
 com\jcaido\TallerH2Render\DTOs\propietario\PropietarioBusquedasDTO$PropietarioBusquedasDTOBuilder.class
 com\jcaido\TallerH2Render\models\EntradaPieza.class
+com\jcaido\TallerH2Render\services\facturaCliente\FacturaClienteServiceImpl.class
 com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalDTO.class
 com\jcaido\TallerH2Render\config\OpenApiConfig.class
 com\jcaido\TallerH2Render\models\Propietario.class
@@ -63,6 +70,7 @@ com\jcaido\TallerH2Render\controller\CodigoPostalController.class
 com\jcaido\TallerH2Render\services\vehiculo\VehiculoService.class
 com\jcaido\TallerH2Render\DTOs\propietario\PropietarioBusquedasParcialDTO.class
 com\jcaido\TallerH2Render\models\OrdenReparacion$OrdenReparacionBuilder.class
+com\jcaido\TallerH2Render\DTOs\facturaCliente\FacturaClienteCrearDTO.class
 com\jcaido\TallerH2Render\DTOs\pieza\PiezaDTO.class
 com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalCrearDTO$CodigoPostalCrearDTOBuilder.class
 com\jcaido\TallerH2Render\models\CodigoPostal.class
@@ -79,10 +87,12 @@ com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionReducidaDTO.class
 com\jcaido\TallerH2Render\services\ordenReparacion\OrdenReparacionServiceImpl.class
 com\jcaido\TallerH2Render\exceptions\ResourceNotFoundException.class
 com\jcaido\TallerH2Render\models\Pieza.class
+com\jcaido\TallerH2Render\controller\FacturaClienteController.class
 com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorDTO.class
 com\jcaido\TallerH2Render\models\PiezasReparacion$PiezasReparacionBuilder.class
 com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorBusquedasParcialDTO.class
 com\jcaido\TallerH2Render\DTOs\propietario\PropietarioDTO.class
+com\jcaido\TallerH2Render\models\FacturaCliente$FacturaClienteBuilder.class
 com\jcaido\TallerH2Render\DTOs\almacen\MovimientoAlmacenDTO$Movimiento.class
 com\jcaido\TallerH2Render\services\propietario\PropietarioServiceImpl.class
 com\jcaido\TallerH2Render\exceptions\BadRequestCreacionException.class
@@ -96,6 +106,7 @@ com\jcaido\TallerH2Render\DTOs\propietario\PropietarioBusquedasDTO.class
 com\jcaido\TallerH2Render\DTOs\pieza\PiezaCrearDTO.class
 com\jcaido\TallerH2Render\models\Proveedor.class
 com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalCrearDTO.class
+com\jcaido\TallerH2Render\services\facturaCliente\FacturaClienteConsultasService.class
 com\jcaido\TallerH2Render\services\propietario\PropietarioModificacionCambiosService.class
 com\jcaido\TallerH2Render\services\proveedor\ProveedorValidacionesUniqueService.class
 com\jcaido\TallerH2Render\repositories\VehiculoRepository.class
