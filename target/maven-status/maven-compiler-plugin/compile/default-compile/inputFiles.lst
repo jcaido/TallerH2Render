@@ -1,3 +1,4 @@
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\ordenReparacion\OrdenReparacionModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\ProveedorRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\vehiculo\VehiculoValidacionesUniqueService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\OrdenReparacionRepository.java
@@ -18,6 +19,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\codigoPostal\CodigoPostalValidacionesUniqueService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\TallerH2RenderApplication.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\almacen\MovimientoAlmacenDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionHorasDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\piezasReparacion\PiezasReparacionService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\vehiculo\VehiculoServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\manoDeObra\ManoDeObraCrearDTO.java
@@ -25,9 +27,11 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\PiezasReparacionController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\vehiculo\VehiculoService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\propietario\PropietarioValidacionesUniqueService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\config\OpenApiConfig.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\PiezaRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\proveedor\ProveedorService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\ordenReparacion\OrdenReparacionServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\vehiculo\VehiculoCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\VehiculoController.java
@@ -35,7 +39,9 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\PiezasReparacionRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\Proveedor.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\vehiculo\VehiculoDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\piezasReparacion\PiezasReparacionDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionCierreDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\Propietario.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\PiezasReparacion.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\piezasReparacion\PiezasReparacionServiceImpl.java
@@ -51,6 +57,8 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\exceptions\BadRequestModificacionException.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\codigoPostal\CodigoPostalServiceimpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\propietario\PropietarioDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\ordenReparacion\OrdenReparacionService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionBusquedasDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\piezasReparacion\PiezasReparacionBusquedasParcialDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\vehiculo\VehiculoBusquedasDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\ProveedorController.java
@@ -70,10 +78,13 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\proveedor\ProveedorValidacionesUniqueService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\almacen\MovimientoPiezaDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\ManoDeObraController.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionBusquedasParcialDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorBusquedasParcialDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\vehiculo\VehiculoModificacionCambiosService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionReducidaDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\pieza\PiezaModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\CodigoPostal.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\CodigoPostalRepository.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\OrdenReparacionController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\manoDeObra\ManoDeObraService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\VehiculoRepository.java
