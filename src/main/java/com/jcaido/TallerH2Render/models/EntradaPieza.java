@@ -25,4 +25,8 @@ public class EntradaPieza implements Serializable {
     private Integer cantidad;
     @Column(name = "precio_entrada")
     private Double precioEntrada;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @ManyToOne()
+    @JoinColumn(name = "albaran_proveedor_id")
+    private AlbaranProveedor albaranProveedor;
 }
