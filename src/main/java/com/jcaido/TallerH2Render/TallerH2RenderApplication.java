@@ -1,6 +1,7 @@
 package com.jcaido.TallerH2Render;
 
 import com.jcaido.TallerH2Render.DTOs.codigoPostal.CodigoPostalDTO;
+import com.jcaido.TallerH2Render.DTOs.entradaPieza.EntradaPiezaDTO;
 import com.jcaido.TallerH2Render.DTOs.pieza.PiezaDTO;
 import com.jcaido.TallerH2Render.DTOs.piezasReparacion.PiezasReparacionDTO;
 import com.jcaido.TallerH2Render.DTOs.propietario.PropietarioDTO;
@@ -41,6 +42,10 @@ public class TallerH2RenderApplication {
 	@Bean
 	public PiezasReparacionDTO piezasReparacionDTO() {
 		return new PiezasReparacionDTO();
+	}
+	@Bean
+	public EntradaPiezaDTO entradaPiezaDTO() {
+		return new EntradaPiezaDTO();
 	}
 
 
