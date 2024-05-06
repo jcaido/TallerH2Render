@@ -1,4 +1,6 @@
+com\jcaido\TallerH2Render\models\FacturaProveedor$FacturaProveedorBuilder.class
 com\jcaido\TallerH2Render\models\CodigoPostal$CodigoPostalBuilder.class
+com\jcaido\TallerH2Render\services\albaranProveedor\AlbaranProveedorModificacionCambiosService.class
 com\jcaido\TallerH2Render\DTOs\manoDeObra\ManoDeObraCrearDTO.class
 com\jcaido\TallerH2Render\DTOs\piezasReparacion\PiezasReparacionBusquedasParcialDTO.class
 com\jcaido\TallerH2Render\DTOs\vehiculo\VehiculoBusquedasDTO.class
@@ -8,7 +10,9 @@ com\jcaido\TallerH2Render\services\manoDeObra\ManoDeObraService.class
 com\jcaido\TallerH2Render\services\codigoPostal\CodigoPostalService.class
 com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionHorasDTO.class
 com\jcaido\TallerH2Render\models\EntradaPieza$EntradaPiezaBuilder.class
+com\jcaido\TallerH2Render\controller\AlbaranProveedorController.class
 com\jcaido\TallerH2Render\models\ManoDeObra$ManoDeObraBuilder.class
+com\jcaido\TallerH2Render\DTOs\albaranProveedor\AlbaranProveedorBusquedasParcialDTO.class
 com\jcaido\TallerH2Render\DTOs\piezasReparacion\PiezasReparacionCrearDTO.class
 com\jcaido\TallerH2Render\DTOs\facturaCliente\FacturaClienteDTO.class
 com\jcaido\TallerH2Render\DTOs\facturaCliente\FacturaClientesBusquedasDTO.class
@@ -24,6 +28,7 @@ com\jcaido\TallerH2Render\services\codigoPostal\CodigoPostalServiceimpl.class
 com\jcaido\TallerH2Render\repositories\CodigoPostalRepository.class
 com\jcaido\TallerH2Render\repositories\ProveedorRepository.class
 com\jcaido\TallerH2Render\services\piezasReparacion\PiezasReparacionService.class
+com\jcaido\TallerH2Render\DTOs\albaranProveedor\AlbaranProveedorCrearDTO.class
 com\jcaido\TallerH2Render\controller\EntradaPiezaController.class
 com\jcaido\TallerH2Render\controller\PropietarioController.class
 com\jcaido\TallerH2Render\services\manoDeObra\ManoDeObraServiceImpl.class
@@ -39,6 +44,7 @@ com\jcaido\TallerH2Render\services\pieza\PiezaService.class
 com\jcaido\TallerH2Render\services\pieza\PiezaValidacionesUniqueService.class
 com\jcaido\TallerH2Render\DTOs\propietario\PropietarioCrearDTO$PropietarioCrearDTOBuilder.class
 com\jcaido\TallerH2Render\services\vehiculo\VehiculoValidacionesUniqueService.class
+com\jcaido\TallerH2Render\services\albaranProveedor\AlbaranProveedorServiceImpl.class
 com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalDTO$CodigoPostalDTOBuilder.class
 com\jcaido\TallerH2Render\models\OrdenReparacion.class
 com\jcaido\TallerH2Render\exceptions\GlobalExceptionHandler.class
@@ -69,6 +75,7 @@ com\jcaido\TallerH2Render\services\facturaCliente\FacturaClienteServiceImpl.clas
 com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalDTO.class
 com\jcaido\TallerH2Render\config\OpenApiConfig.class
 com\jcaido\TallerH2Render\models\Propietario.class
+com\jcaido\TallerH2Render\repositories\FacturaProveedorRepository.class
 com\jcaido\TallerH2Render\controller\CodigoPostalController.class
 com\jcaido\TallerH2Render\services\vehiculo\VehiculoService.class
 com\jcaido\TallerH2Render\services\entradaPieza\EntradaPiezaModificacionCambiosService.class
@@ -88,7 +95,9 @@ com\jcaido\TallerH2Render\exceptions\ErrorDetails.class
 com\jcaido\TallerH2Render\DTOs\almacen\MovimientoPiezaDTO.class
 com\jcaido\TallerH2Render\models\Proveedor$ProveedorBuilder.class
 com\jcaido\TallerH2Render\services\vehiculo\VehiculoModificacionCambiosService.class
+com\jcaido\TallerH2Render\DTOs\albaranProveedor\AlbaranProveedorBusquedasDTO.class
 com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionReducidaDTO.class
+com\jcaido\TallerH2Render\models\FacturaProveedor.class
 com\jcaido\TallerH2Render\services\ordenReparacion\OrdenReparacionServiceImpl.class
 com\jcaido\TallerH2Render\models\AlbaranProveedor$AlbaranProveedorBuilder.class
 com\jcaido\TallerH2Render\exceptions\ResourceNotFoundException.class
@@ -96,9 +105,11 @@ com\jcaido\TallerH2Render\models\Pieza.class
 com\jcaido\TallerH2Render\controller\FacturaClienteController.class
 com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorDTO.class
 com\jcaido\TallerH2Render\models\PiezasReparacion$PiezasReparacionBuilder.class
+com\jcaido\TallerH2Render\services\albaranProveedor\AlbaranProveedorService.class
 com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorBusquedasParcialDTO.class
 com\jcaido\TallerH2Render\DTOs\propietario\PropietarioDTO.class
 com\jcaido\TallerH2Render\models\FacturaCliente$FacturaClienteBuilder.class
+com\jcaido\TallerH2Render\DTOs\albaranProveedor\AlbaranProveedorDTO.class
 com\jcaido\TallerH2Render\DTOs\almacen\MovimientoAlmacenDTO$Movimiento.class
 com\jcaido\TallerH2Render\services\propietario\PropietarioServiceImpl.class
 com\jcaido\TallerH2Render\repositories\AlbaranProveedorRepository.class
