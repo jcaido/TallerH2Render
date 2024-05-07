@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "propietarios")
@@ -30,4 +32,11 @@ public class Propietario implements Serializable {
     @ManyToOne()
     @JoinColumn(name = "codigo_postal_id")
     private CodigoPostal codigoPostal;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @OneToMany(mappedBy = "propietario")
+    private List<Vehiculo> vehiculos = new ArrayList<>();
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @OneToMany(mappedBy = "propietario")
+    private List<FacturaCliente> facturasClientes = new ArrayList<>();
+
 }
