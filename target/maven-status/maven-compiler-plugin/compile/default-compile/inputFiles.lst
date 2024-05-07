@@ -1,5 +1,6 @@
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\ordenReparacion\OrdenReparacionModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\FacturaClienteController.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\facturaProveedor\FacturaProveedorServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\OrdenReparacionRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\propietario\PropietarioService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\PropietarioController.java
@@ -17,6 +18,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\piezasReparacion\PiezasReparacionService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionCrearDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\facturaProveedor\FacturaProveedorService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\proveedor\ProveedorService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\ordenReparacion\OrdenReparacionServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorCrearDTO.java
@@ -28,6 +30,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\Propietario.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\FacturaClienteRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\albaranProveedor\AlbaranProveedorBusquedasParcialDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\facturaProveedor\FacturaProveedorDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\PiezasReparacion.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\entradaPieza\EntradaPiezaModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\albaranProveedor\AlbaranProveedorModificacionCambiosService.java
@@ -42,6 +45,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\ProveedorController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\AlbaranProveedorRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\proveedor\ProveedorServiceImpl.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\FacturaProveedorController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\albaranProveedor\AlbaranProveedorServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\facturaCliente\FacturaClienteCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\proveedor\ProveedorModificacionCambiosService.java
@@ -49,11 +53,14 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\albaranProveedor\AlbaranProveedorService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\albaranProveedor\AlbaranProveedorCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\proveedor\ProveedorBusquedasParcialDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\facturaProveedor\FacturaProveedorModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\CodigoPostal.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\CodigoPostalRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\facturaCliente\FacturaClienteServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\manoDeObra\ManoDeObraService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\facturaProveedor\FacturaProveedorCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\ProveedorRepository.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\facturaProveedor\FacturaProveedorBusquedasDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\vehiculo\VehiculoValidacionesUniqueService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\exceptions\GlobalExceptionHandler.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\models\EntradaPieza.java
