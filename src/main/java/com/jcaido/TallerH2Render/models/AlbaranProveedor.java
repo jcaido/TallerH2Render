@@ -21,7 +21,9 @@ public class AlbaranProveedor implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @OneToOne()
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @ManyToOne()
+    @JoinColumn(name = "proveedor_id")
     private Proveedor proveedor;
     @Column(name = "fecha_albaran")
     private LocalDate fechaAlbaran;
