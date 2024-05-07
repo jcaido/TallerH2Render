@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "vehiculos")
@@ -27,4 +29,7 @@ public class Vehiculo implements Serializable {
     @ManyToOne()
     @JoinColumn(name = "propietario_id")
     private Propietario propietario;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @OneToMany(mappedBy = "vehiculo")
+    private List<OrdenReparacion> ordenesReparacion = new ArrayList<>();
 }
