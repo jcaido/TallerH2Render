@@ -17,6 +17,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\EntradaPiezaRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\piezasReparacion\PiezasReparacionService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\codigoPostal\CodigoPostalDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\almacen\InventarioAlmacenService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\facturaProveedor\FacturaProveedorService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\proveedor\ProveedorService.java
@@ -39,6 +40,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\pieza\PiezaServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\exceptions\BadRequestModificacionException.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\codigoPostal\CodigoPostalServiceimpl.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\almacen\InventarioAlmacenServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\facturaCliente\FacturaClienteConsultasService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\EntradaPiezaController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\ordenReparacion\OrdenReparacionService.java
@@ -124,5 +126,6 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\vehiculo\VehiculoModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\DTOs\ordenReparacion\OrdenReparacionReducidaDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\services\pieza\PiezaModificacionCambiosService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\AlmacenController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\controller\OrdenReparacionController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\TallerH2Render\src\main\java\com\jcaido\TallerH2Render\repositories\VehiculoRepository.java
