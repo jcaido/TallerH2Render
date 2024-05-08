@@ -6,6 +6,8 @@ import com.jcaido.TallerH2Render.exceptions.BadRequestModificacionException;
 import com.jcaido.TallerH2Render.exceptions.ResourceNotFoundException;
 import com.jcaido.TallerH2Render.models.Pieza;
 import com.jcaido.TallerH2Render.repositories.PiezaRepository;
+import com.jcaido.TallerH2Render.services.entradaPieza.EntradaPiezaService;
+import com.jcaido.TallerH2Render.services.piezasReparacion.PiezasReparacionService;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -21,14 +23,16 @@ public class PiezaServiceImpl implements PiezaService{
     private  final ModelMapper modelMapper;
     private final PiezaValidacionesUniqueService piezaValidacionesUniqueService;
     private final PiezaModificacionCambiosService piezaModificacionCambiosService;
-    //private final PiezasReparacionService piezasReparacionService;
-    //private final EntradaPiezaService entradaPiezasService;
+    private final PiezasReparacionService piezasReparacionService;
+    private final EntradaPiezaService entradaPiezasService;
 
-    public PiezaServiceImpl(PiezaRepository piezaRepository, ModelMapper modelMapper, PiezaValidacionesUniqueService piezaValidacionesUniqueService, PiezaModificacionCambiosService piezaModificacionCambiosService) {
+    public PiezaServiceImpl(PiezaRepository piezaRepository, ModelMapper modelMapper, PiezaValidacionesUniqueService piezaValidacionesUniqueService, PiezaModificacionCambiosService piezaModificacionCambiosService, PiezasReparacionService piezasReparacionService, EntradaPiezaService entradaPiezasService) {
         this.piezaRepository = piezaRepository;
         this.modelMapper = modelMapper;
         this.piezaValidacionesUniqueService = piezaValidacionesUniqueService;
         this.piezaModificacionCambiosService = piezaModificacionCambiosService;
+        this.piezasReparacionService = piezasReparacionService;
+        this.entradaPiezasService = entradaPiezasService;
     }
 
 
@@ -106,6 +110,19 @@ public class PiezaServiceImpl implements PiezaService{
 
     @Override
     public String deleteById(Long id) {
-        return null;
+        if (!piezaRepository.existsById(id))
+            throw new ResourceNotFoundException("Pieza", "id", String.valueOf(id));
+
+        if (piezasReparacionService.obtenerPiezasReparacionPorPiezaHQL(id).size() > 0)
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "La pieza está imputada");
+
+        if (entradaPiezasService.obtenerEntradasPorPiezaHQL(id).size() > 0)
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "La pieza tiene entradas asociadas");
+
+        piezaRepository.deleteById(id);
+
+        String respuesta = "Pieza eliminada con exito";
+
+        return respuesta;
     }
 }
