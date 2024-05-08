@@ -1,6 +1,7 @@
 package com.jcaido.TallerH2Render.DTOs.proveedor;
 
 import com.jcaido.TallerH2Render.models.CodigoPostal;
+import com.jcaido.TallerH2Render.models.EntradaPieza;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
