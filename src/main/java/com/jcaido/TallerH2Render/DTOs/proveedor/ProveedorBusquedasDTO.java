@@ -16,5 +16,5 @@ public class ProveedorBusquedasDTO {
     private String dniCif;
     private String domicilio;
     private CodigoPostal codigoPostal;
-    //private EntradaPieza entradaPieza;
+    private EntradaPieza entradaPieza;
 }
