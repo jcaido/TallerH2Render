@@ -10,6 +10,7 @@ import com.jcaido.TallerH2Render.models.Propietario;
 import com.jcaido.TallerH2Render.models.Vehiculo;
 import com.jcaido.TallerH2Render.repositories.PropietarioRepository;
 import com.jcaido.TallerH2Render.repositories.VehiculoRepository;
+import com.jcaido.TallerH2Render.services.ordenReparacion.OrdenReparacionService;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 import org.modelmapper.ModelMapper;
@@ -29,15 +30,16 @@ public class VehiculoServiceImpl implements VehiculoService{
     private final VehiculoValidacionesUniqueService vehiculoValidacionesUniqueService;
     private final VehiculoModificacionCambiosService vehiculoModificacionCambiosService;
 
-    //private final OrdenReparacionService ordenReparacionService;
+    private final OrdenReparacionService ordenReparacionService;
     private final ModelMapper modelMapper;
 
-    public VehiculoServiceImpl(VehiculoRepository vehiculoRepository, PropietarioRepository propietarioRepository, EntityManager entityManager, VehiculoValidacionesUniqueService vehiculoValidacionesUniqueService, VehiculoModificacionCambiosService vehiculoModificacionCambiosService, ModelMapper modelMapper) {
+    public VehiculoServiceImpl(VehiculoRepository vehiculoRepository, PropietarioRepository propietarioRepository, EntityManager entityManager, VehiculoValidacionesUniqueService vehiculoValidacionesUniqueService, VehiculoModificacionCambiosService vehiculoModificacionCambiosService, OrdenReparacionService ordenReparacionService, ModelMapper modelMapper) {
         this.vehiculoRepository = vehiculoRepository;
         this.propietarioRepository = propietarioRepository;
         this.entityManager = entityManager;
         this.vehiculoValidacionesUniqueService = vehiculoValidacionesUniqueService;
         this.vehiculoModificacionCambiosService = vehiculoModificacionCambiosService;
+        this.ordenReparacionService = ordenReparacionService;
         this.modelMapper = modelMapper;
     }
 
@@ -121,7 +123,18 @@ public class VehiculoServiceImpl implements VehiculoService{
 
     @Override
     public String deleteById(Long id) {
-        return null;
+
+        if (!vehiculoRepository.existsById(id))
+            throw new ResourceNotFoundException("Vehiculo", "id", String.valueOf(id));
+
+        if (ordenReparacionService.obtenerOrdenesReparacionPorVehiculo(id).size() > 0)
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "Existen ordenes de reparacion relacionadas con ese vehiculo");
+
+        vehiculoRepository.deleteById(id);
+
+        String respuesta = "Vehiculo eliminado con exito";
+
+        return respuesta;
     }
 
     @Override
