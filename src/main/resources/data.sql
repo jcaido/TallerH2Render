@@ -37,9 +37,6 @@ insert into vehiculos (matricula, marca, modelo, color, propietario_id) values (
 insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('2110YTY', 'RENAULT', 'CMAX', 'Amarillo', 6);
 insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('0499FCK', 'FORD', 'FOCUS', 'Blanco', 5);
 
-insert into mano_de_obra (fecha_nuevo_precio, precio_hora, precio_hora_actual) values ('2022-11-19', 20.5, false);
-insert into mano_de_obra (fecha_nuevo_precio, precio_hora, precio_hora_actual) values ('2023-01-01', 32.0, true);
-
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA23356', 'Arandela de cobre', 0.50);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA40001', 'polea distribucion', 25.30);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('TE23126', 'filtro aceite', 4.20);
@@ -51,18 +48,49 @@ insert into piezas (referencia, nombre_pieza, precio_venta) values ('R333300', '
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA55555', 'culata', 300.45);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA44099', 'caja de cambios', 300.34);
 
-insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (1, 1, '2022-11-19', '2022-11-21', 'REVISAR ARRANQUE', 120000, 4.5, true, false);
+insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (1, '2022-11-30', 'A0002', 21, false);
+insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (2, '2022-12-03', 'BR0002', 21, false);
+insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva,contabilizada) values (1, '2022-12-20', 'A00022', 21, false);
+insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (2, '2022-12-10', 'BR00025', 21, false);
+insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (3, '2022-11-12', 'TR4567', 21, false);
+
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (3, '2022-11-19', 'AOO3445', false, null);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-11-19', 'DEFFT55', false, null);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (3, '2022-11-19', '3EED45', false, null);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (1, '2022-11-19', 'RTTF4442', true, 1);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (3, '2022-11-19', '4400OPL', false, null);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-11-19', 'TTTY4SS', false, null);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (4, '2022-11-19', 'EEEERR', false, null);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (3, '2022-11-19', 'RT667FDD', false, null);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-11-19', '1234REE', true, 2);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (1, '2022-11-19', '5TGBNHY6', false, null);
+
+insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (1, 2, 5.34, 1);
+insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (4, 3, 3.54, 1);
+insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (2, 1, 23.45, 2);
+insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (3, 2, 4.56, 2);
+insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (8, 1, 43.32, 1);
+insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (1, 2, 5.34, 3);
+insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (4, 3, 3.54, 4);
+insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (2, 1, 23.45, 3);
+insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (3, 2, 4.56, 5);
+insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (8, 1, 43.32, 5);
+
+insert into mano_de_obra (fecha_nuevo_precio, precio_hora, precio_hora_actual) values ('2022-11-19', 20.5, false);
+insert into mano_de_obra (fecha_nuevo_precio, precio_hora, precio_hora_actual) values ('2023-01-01', 32.0, true);
+
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (1, 1, '2022-11-19', '2022-11-21', 'REVISAR ARRANQUE', 120000, 4.5, true, true);
 insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (2, null, '2022-11-20', null, 'REVISAR RUIDO MOTOR', 23987, null, false, false);
 insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (3, null, '2022-11-19', null, 'RUIDO EMBRAGUE', 165776, null, false, false);
-insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (1, 1, '2022-11-22', '2022-11-23', 'CAMBIO ACEITE', 13455, 1.5, true, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (1, 1, '2022-11-22', '2022-11-23', 'CAMBIO ACEITE', 13455, 1.5, true, true);
 insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (4, null, '2022-01-23', null, 'REVISAR GASES', 23987, null, false, false);
 insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (2, null, '2022-11-22', null, 'FUGA DE ACEITE', 32443, null, false, false);
 insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (5, null, '2022-11-25', null, 'REVISAR TERMOSTATO', 2332, null, false, false);
 insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (2, null, '2022-11-19', null, 'COMPROBAR ARRANQUE', 123321, null, false, false);
-insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (1, 2, '2022-11-20', '2022-11-25', 'CAMBIAR FILTRO POLEN', 54345, 2.5, true, false);
-insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (2, 2, '2022-11-21', '2022-11-21', 'REVISAR BUJIAS', 22345, 2, true, false);
-insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (3, 2, '2023-02-20', '2023-02-21', 'CAMBIAR FILTROS', 25987, 3, true, false);
-insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (4, 2, '2023-03-10', '2023-03-11', 'VALVULA EGR', 123456, 4, true, false);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (1, 2, '2022-11-20', '2022-11-25', 'CAMBIAR FILTRO POLEN', 54345, 2.5, true, true);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (2, 2, '2022-11-21', '2022-12-25', 'REVISAR BUJIAS', 22345, 2, true, true);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (3, 2, '2023-02-20', '2023-03-10', 'CAMBIAR FILTROS', 25987, 3, true, true);
+insert into orden_reparacion (vehiculo_id, mano_de_obra_id, fecha_apertura, fecha_cierre, descripcion, kilometros, horas, cerrada, facturada) values (4, 2, '2023-03-10', '2023-03-11', 'VALVULA EGR', 123456, 4, true, true);
 
 insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 1, 1);
 insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 1, 2);
@@ -74,3 +102,10 @@ insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (
 insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 6, 1);
 insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 6, 2);
 insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (2, 6, 4);
+
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2022-11-21', 1, 'T2022', 21, 1, 1);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2022-11-23', 2, 'T2022', 21, 4, 1);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2022-11-25', 3, 'T2022', 12, 9, 1);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2022-12-25', 4, 'T2022', 21, 10, 3);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-03-10', 1, 'T2023', 21, 11, 1);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-03-11', 2, 'T2023', 21, 12, 5);
