@@ -2,7 +2,9 @@ package com.jcaido.TallerH2Render.controller;
 
 import com.jcaido.TallerH2Render.DTOs.codigoPostal.CodigoPostalCrearDTO;
 import com.jcaido.TallerH2Render.DTOs.codigoPostal.CodigoPostalDTO;
+import com.jcaido.TallerH2Render.DTOs.propietario.PropietarioBusquedasDTO;
 import com.jcaido.TallerH2Render.services.codigoPostal.CodigoPostalService;
+import com.jcaido.TallerH2Render.services.propietario.PropietarioService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -23,9 +25,11 @@ import java.util.List;
 public class CodigoPostalController {
 
     private final CodigoPostalService codigoPostalService;
+    private final PropietarioService propietarioService;
 
-    public CodigoPostalController(CodigoPostalService codigoPostalService) {
+    public CodigoPostalController(CodigoPostalService codigoPostalService, PropietarioService propietarioService) {
         this.codigoPostalService = codigoPostalService;
+        this.propietarioService = propietarioService;
     }
 
     @Operation(summary = "Crear un nuevo Código Postal", description = "Crear un nuevo Código Postal")
@@ -100,6 +104,13 @@ public class CodigoPostalController {
             required = true) @PathVariable Long id) {
 
         return new ResponseEntity<>(codigoPostalService.findById(id), HttpStatus.OK);
+    }
+
+
+    @GetMapping("/{id}/propietarios")
+    public List<PropietarioBusquedasDTO> obtenerPropietariosPorCodigoPostal(@PathVariable Long id) {
+
+        return propietarioService.ObtenerPropietariosPorCodigoPostal(id);
     }
 
 
