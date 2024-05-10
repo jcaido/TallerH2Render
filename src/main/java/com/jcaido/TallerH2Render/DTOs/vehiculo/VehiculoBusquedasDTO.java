@@ -1,5 +1,6 @@
 package com.jcaido.TallerH2Render.DTOs.vehiculo;
 
+import com.jcaido.TallerH2Render.DTOs.propietario.PropietarioBusquedasDTO;
 import com.jcaido.TallerH2Render.models.Propietario;
 import lombok.*;
 
@@ -14,5 +15,5 @@ public class VehiculoBusquedasDTO {
     private String marca;
     private String modelo;
     private String color;
-    private Propietario propietario;
+    private PropietarioBusquedasDTO propietario;
 }
