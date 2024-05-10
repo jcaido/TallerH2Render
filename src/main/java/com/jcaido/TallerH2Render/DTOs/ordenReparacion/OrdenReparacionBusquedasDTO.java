@@ -2,7 +2,9 @@ package com.jcaido.TallerH2Render.DTOs.ordenReparacion;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.jcaido.TallerH2Render.DTOs.piezasReparacion.PiezasReparacionBusquedasParcialDTO;
+import com.jcaido.TallerH2Render.DTOs.vehiculo.VehiculoBusquedasDTO;
 import com.jcaido.TallerH2Render.models.ManoDeObra;
+import com.jcaido.TallerH2Render.models.Propietario;
 import com.jcaido.TallerH2Render.models.Vehiculo;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -29,7 +31,7 @@ public class OrdenReparacionBusquedasDTO {
     private Double horas;
     private Boolean cerrada;
     private Boolean facturada;
-    private Vehiculo vehiculo;
+    private VehiculoBusquedasDTO vehiculo;
     private ManoDeObra manoDeObra;
     private List<PiezasReparacionBusquedasParcialDTO> piezasReparacion;
 }
