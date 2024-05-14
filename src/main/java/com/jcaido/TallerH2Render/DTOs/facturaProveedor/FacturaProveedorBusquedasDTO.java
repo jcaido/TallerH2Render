@@ -2,6 +2,7 @@ package com.jcaido.TallerH2Render.DTOs.facturaProveedor;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.jcaido.TallerH2Render.DTOs.albaranProveedor.AlbaranProveedorBusquedasDTO;
+import com.jcaido.TallerH2Render.DTOs.proveedor.ProveedorBusquedasDTO;
 import com.jcaido.TallerH2Render.models.Proveedor;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,7 +18,7 @@ import java.util.List;
 @Setter
 public class FacturaProveedorBusquedasDTO {
     private Long id;
-    private Proveedor proveedor;
+    private ProveedorBusquedasDTO proveedor;
     @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate fechaFactura;
     private String numeroFactura;

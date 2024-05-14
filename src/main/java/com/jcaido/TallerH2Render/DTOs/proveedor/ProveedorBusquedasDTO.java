@@ -1,5 +1,6 @@
 package com.jcaido.TallerH2Render.DTOs.proveedor;
 
+import com.jcaido.TallerH2Render.DTOs.codigoPostal.CodigoPostalDTO;
 import com.jcaido.TallerH2Render.models.CodigoPostal;
 import com.jcaido.TallerH2Render.models.EntradaPieza;
 import lombok.AllArgsConstructor;
@@ -16,6 +17,6 @@ public class ProveedorBusquedasDTO {
     private String nombre;
     private String dniCif;
     private String domicilio;
-    private CodigoPostal codigoPostal;
+    private CodigoPostalDTO codigoPostal;
     private EntradaPieza entradaPieza;
 }
