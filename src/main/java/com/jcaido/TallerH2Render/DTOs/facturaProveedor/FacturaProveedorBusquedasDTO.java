@@ -3,12 +3,10 @@ package com.jcaido.TallerH2Render.DTOs.facturaProveedor;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.jcaido.TallerH2Render.DTOs.albaranProveedor.AlbaranProveedorBusquedasDTO;
 import com.jcaido.TallerH2Render.DTOs.proveedor.ProveedorBusquedasDTO;
-import com.jcaido.TallerH2Render.models.Proveedor;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import java.time.LocalDate;
 import java.util.List;
 

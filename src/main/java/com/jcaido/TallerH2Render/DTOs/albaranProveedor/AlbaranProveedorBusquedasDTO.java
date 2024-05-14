@@ -2,8 +2,8 @@ package com.jcaido.TallerH2Render.DTOs.albaranProveedor;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.jcaido.TallerH2Render.DTOs.entradaPieza.EntradaPiezaBusquedasParcialDTO;
+import com.jcaido.TallerH2Render.DTOs.proveedor.ProveedorBusquedasDTO;
 import com.jcaido.TallerH2Render.models.FacturaProveedor;
-import com.jcaido.TallerH2Render.models.Proveedor;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,7 +19,7 @@ import java.util.List;
 @Setter
 public class AlbaranProveedorBusquedasDTO {
     private Long id;
-    private Proveedor proveedor;
+    private ProveedorBusquedasDTO proveedor;
     @JsonFormat(pattern = "dd-MM-yyyy")
     @NotNull(message = "la fecha del albarán no puede ser nula")
     private LocalDate fechaAlbaran;
