@@ -1,6 +1,7 @@
 package com.jcaido.TallerH2Render.DTOs.facturaProveedor;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.jcaido.TallerH2Render.DTOs.proveedor.ProveedorBusquedasDTO;
 import com.jcaido.TallerH2Render.models.Proveedor;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -22,5 +23,5 @@ public class FacturaProveedorDTO {
     private String numeroFactura;
     private Integer tipoIVA;
     private Boolean contabilizada = false;
-    private Proveedor proveedor;
+    private ProveedorBusquedasDTO proveedor;
 }
