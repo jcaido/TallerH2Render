@@ -20,21 +20,36 @@ insert into codigos_postales (codigo_postal, localidad, provincia) values ('4432
 insert into codigos_postales (codigo_postal, localidad, provincia) values ('41222', 'Marmolejo', 'Jaen');
 
 insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio,codigo_postal_id) values ('Cib', 'Ros', 'Arna', '11111111A', 'Pe Sa Vnte, 2', 1);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Atio', 'Gca', 'Arna', '22222222B', 'Mrila, 23', 2);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Mgul Anel', 'Pez', 'Ana', '33333333C', 'Salalla, 5', 1);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Je Aonio', 'Casco', 'Ana', '44444444D', 'Emada, 76', 3);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Alto', 'Lez', 'Arna', '55555555E', 'Creras, 8', 2);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Rel', 'Saez', 'Ana', '66666666F', 'Alante, 6', 1);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Jan', 'Lucna', 'Ana', '77777777G', 'Gaos, 34', 7);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Pro', 'Banco', 'Arna', '88888888H', 'Esiantes, 65', 1);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Plo', 'Vao', 'Ana', '99888888I', 'Toto, 7', 1);
-insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Mio', 'Pez', 'Arna', '99999999J', 'Llo, 89', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Atio', 'Gca', 'Est', '22222222B', 'Mrila, 23', 2);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Mgul Anel', 'Can', 'Ana', '33333333C', 'Salalla, 5', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Je Aonio', 'Ben', 'Vit', '44444444D', 'Emada, 76', 3);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Alto', 'Lez', 'Teo', '55555555E', 'Creras, 8', 2);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Rel', 'Saez', 'Pro', '66666666F', 'Alante, 6', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Jan', 'Lucna', 'Mbe', '77777777G', 'Gaos, 34', 7);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Pro', 'Banco', 'Gzo', '88888888H', 'Esiantes, 65', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Plo', 'Vao', 'Mue', '99888888I', 'Toto, 7', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Mio', 'Pez', 'Teo', '99999999J', 'Llo, 89', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio,codigo_postal_id) values ('Anr', 'Per', 'Vte', '11222222A', 'Pe Sa Vnte, 2', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Vit', 'Sch', 'Ato', '11333333B', 'Mrila, 23', 2);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Eto', 'Gto', 'Mgu', '11444444C', 'Salalla, 5', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Aro', 'Rsa', 'Lis', '11555555D', 'Emada, 76', 3);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Vca', 'Gci', 'Cal', '11666666E', 'Creras, 8', 2);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Mka', 'Lpe', 'Joh', '11777777F', 'Alante, 6', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Rio', 'Cto', 'Mra', '11888888G', 'Gaos, 34', 7);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Cta', 'Ala', 'Etl', '11999999H', 'Esiantes, 65', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Rbn', 'Urb', 'Ptc', '22111111A', 'Toto, 7', 1);
+insert into propietarios (nombre, primer_apellido, segundo_apellido, dni, domicilio, codigo_postal_id) values ('Hgo', 'Jim', 'Vna', '33111111B', 'Llo, 89', 1);
 
 insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('GRUPO PEÑA SL', 'B14995673', 'Peña Blanca, 2', 3);
 insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('TORNILLOS LA LAGUNA SL', 'B14445676', 'Calle Blanca Palima, 3', 5);
 insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('PLACAS DE PIEZAS, SL', 'B14665765', 'Las Albarizas, 5', 6);
 insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('MOTORES ORDOÑEZ', 'B14436571', 'Calle Baena, 28', 3);
 insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('COMPONENTES ELOY', 'B14005600', 'Calle las cimas, 80', 2);
+insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('RECAMBIOS AGUILAR, SL', 'B66777890', 'Calle Alguacil Sanchez, 25', 11);
+insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('RECAUCHUTADOS ALMENDRO SA', 'A23443566T', 'Avda. Gil , 33', 14);
+insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('AUTOMOCION VELAZQUES, SL', 'B45333236', 'Calle Vicente Rul, 5', 17);
+insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('CAMPERA DEL MOTOR, SA', 'A50000987', 'Avda. del flamenco, 198', 3);
+insert into proveedores (nombre, dni_cif, domicilio, codigo_postal_id) values ('OJEDA RECAMBIOS, SL', 'B67555410', 'Ctra de Benavente, s/n', 5);
 
 insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('2345DFG', 'RENAULT', 'CLIO', 'Blanco', 1);
 insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('3214FVC', 'FORD', 'FIESTA', 'Azul', 3);
@@ -46,6 +61,16 @@ insert into vehiculos (matricula, marca, modelo, color, propietario_id) values (
 insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('5111UUU', 'SEAT', 'TOLEDO', 'Azul', 1);
 insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('2110YTY', 'RENAULT', 'CMAX', 'Amarillo', 6);
 insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('0499FCK', 'FORD', 'FOCUS', 'Blanco', 5);
+insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('7601MNB', 'RENAULT', 'MEGANE', 'Blanco', 1);
+insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('6528NBV', 'FORD', 'ESCORT', 'Azul', 3);
+insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('5437BVC', 'CITROEN', 'C5', 'Negro', 1);
+insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('4396VCX', 'SEAT', 'CORDOBA', 'Blanco', 5);
+insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('3109CXZ', 'PEUGEOT', '407', 'Rojo', 1);
+insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('2018ZXZ', 'RENAULT', '21', 'Negro', 3);
+insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('1042XCV', 'PEUGEOT', '205', 'Naranja', 4);
+insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('1428CVB', 'SEAT', 'GRANADA', 'Azul', 1);
+insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('2814CVB', 'CITROEN', 'CMAX', 'Amarillo', 6);
+insert into vehiculos (matricula, marca, modelo, color, propietario_id) values ('4013BZK', 'HONDA', 'ACCORD', 'Blanco', 5);
 
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA23356', 'Arandela de cobre', 0.50);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA40001', 'polea distribucion', 25.30);
