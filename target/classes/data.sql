@@ -94,21 +94,22 @@ insert into piezas (referencia, nombre_pieza, precio_venta) values ('X334445', '
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('X110004', 'sensor deposito combustible', 56.98);
 
 insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (1, '2022-11-30', 'A0002', 21, false);
-insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (2, '2022-12-03', 'BR0002', 21, false);
-insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva,contabilizada) values (1, '2022-12-20', 'A00022', 21, false);
-insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (2, '2022-12-10', 'BR00025', 21, false);
-insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (3, '2022-11-12', 'TR4567', 21, false);
+insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (2, '2022-11-30', 'TR4567', 21, false);
+insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (2, '2022-12-31', 'BR0002', 21, false);
+insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva,contabilizada) values (3, '2022-11-30', 'A00022', 21, false);
+insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (3, '2022-12-31', 'BR00025', 21, false);
+insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (4, '2022-11-30', 'BR00025', 21, false);
 
-insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (3, '2022-11-19', 'AOO3445', false, null);
-insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-11-19', 'DEFFT55', false, null);
-insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (3, '2022-11-19', '3EED45', false, null);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-11-19', 'AOO3445', true, 3);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-11-19', 'DEFFT55', true, 2);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-11-21', '3EED45', true, 3);
 insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (1, '2022-11-19', 'RTTF4442', true, 1);
-insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (3, '2022-11-19', '4400OPL', false, null);
-insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-11-19', 'TTTY4SS', false, null);
-insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (4, '2022-11-19', 'EEEERR', false, null);
-insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (3, '2022-11-19', 'RT667FDD', false, null);
-insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-11-19', '1234REE', true, 2);
-insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (1, '2022-11-19', '5TGBNHY6', false, null);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (3, '2022-11-19', '4400OPL', true, 4);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-11-19', 'TTTY4SS', true, 2);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (4, '2022-11-19', 'EEEERR', true, 6);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (3, '2022-12-22', 'RT667FDD', true, 5);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2022-12-31', '1234REE', true, 3);
+insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (1, '2022-11-22', '5TGBNHY6', true, 1);
 
 insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (1, 2, 5.34, 1);
 insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (4, 3, 3.54, 1);

@@ -33,6 +33,9 @@ public class AlbaranProveedor implements Serializable {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "albaranProveedor")
     private List<EntradaPieza> entradasPiezas = new ArrayList<>();
-    @OneToOne()
+    //@OneToOne()
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @ManyToOne()
+    @JoinColumn(name = "factura_proveedor_id")
     private FacturaProveedor facturaProveedor;
 }
