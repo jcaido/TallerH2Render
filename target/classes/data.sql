@@ -82,7 +82,6 @@ insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA00000', '
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('R333300', 'radiador', 150.87);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA55555', 'culata', 300.45);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA44099', 'caja de cambios', 300.34);
-
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('BA23000', 'pastilla de freno', 25.8);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('BB80111', 'disco de embrague', 143.98);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('CA73065', 'neumatico h2', 45.98);
