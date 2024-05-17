@@ -82,6 +82,16 @@ insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA00000', '
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('R333300', 'radiador', 150.87);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA55555', 'culata', 300.45);
 insert into piezas (referencia, nombre_pieza, precio_venta) values ('VA44099', 'caja de cambios', 300.34);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('BA23000', 'pastilla de freno', 25.8);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('BB80111', 'disco de embrague', 143.98);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('CA73065', 'neumatico h2', 45.98);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('CD55992', 'neumatico h3', 60.78);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('CE55000', 'sonda x5', 80.56);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('K100000', 'agua limpiaparabrisas', 3.5);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('K228880', 'xt6 antihumos', 4.87);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('M773348', 'disco de freno', 134.76);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('X334445', 'varilla medidor aceite', 6.9);
+insert into piezas (referencia, nombre_pieza, precio_venta) values ('X110004', 'sensor deposito combustible', 56.98);
 
 insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (1, '2022-11-30', 'A0002', 21, false);
 insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (2, '2022-12-03', 'BR0002', 21, false);
