@@ -102,7 +102,6 @@ insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo
 insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (6, '2024-01-31', 'TC342', 21, false);
 insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (1, '2024-01-31', 'GP4566', 21, false);
 insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (8, '2024-02-28', 'P8m90009', 21, false);
-
 insert into factura_proveedor (proveedor_id, fecha_factura, numero_factura, tipo_iva, contabilizada) values (5, '2024-02-28', 'EL5556', 21, false);
 
 insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (2, '2023-11-19', 'AOO3445', true, 3);
@@ -121,7 +120,6 @@ insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, fact
 insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (1, '2024-01-12', 'FACT-GP56', true, 8);
 insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (8, '2024-02-12', 'ALB.567', true, 9);
 insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (8, '2024-02-18', 'ALB.665', true, 9);
-
 insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (5, '2024-02-15', 'TEL-456', true, 10);
 insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (5, '2024-02-20', 'TEL-500', true, 10);
 insert into albaran_proveedor (proveedor_id, fecha_albaran, numero_albaran, facturado, factura_proveedor_id) values (5, '2024-02-25', 'TEL-665', true, 10);
@@ -163,7 +161,6 @@ insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor
 insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (18, 4, 90.20, 15);
 insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (6, 5, 5.50, 15);
 insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (9, 1, 120.60, 16);
-
 insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (1, 10, 0.20, 17);
 insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (5, 15, 4.50, 17);
 insert into entrada_pieza (pieza_id, cantidad, precio_entrada, albaran_proveedor_id) values (8, 1, 110.20, 17);
