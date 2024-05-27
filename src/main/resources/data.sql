@@ -194,9 +194,15 @@ insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (
 insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (1, 6, 2);
 insert into piezas_reparacion (cantidad, orden_reparacion_id, pieza_id) values (2, 6, 4);
 
-insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2022-11-21', 1, 'T2022', 21, 1, 1);
-insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2022-11-23', 2, 'T2022', 21, 4, 1);
-insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2022-11-25', 3, 'T2022', 12, 9, 1);
-insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2022-12-25', 4, 'T2022', 21, 10, 3);
-insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-03-10', 1, 'T2023', 21, 11, 1);
-insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-03-11', 2, 'T2023', 21, 12, 5);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-11-21', 1, 'T2023', 21, 1, 1);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-11-23', 2, 'T2023', 21, 4, 1);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-11-24', 3, 'T2023', 12, 2, 3);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-11-24', 4, 'T2023', 21, 3, 1);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-12-13', 5, 'T2023', 21, 5, 5);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-12-17', 6, 'T2023', 21, 7, 1);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-12-18', 7, 'T2023', 21, 6, 3);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-12-19', 8, 'T2023', 21, 8, 3);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-12-24', 9, 'T2023', 21, 9, 1);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2023-12-26', 10, 'T2023', 21, 10, 3);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2024-02-20', 1, 'T2024', 21, 11, 1);
+insert into facturas_clientes (fecha_factura, numero_factura, serie_factura, tipo_iva, orden_reparacion_id, propietario_id) values ('2024-02-23', 2, 'T2024', 21, 12, 5);
