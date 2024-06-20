@@ -14,14 +14,14 @@ public class OpenApiConfig {
 
         Contact contact = new Contact();
         contact.setEmail("crisrogar@gmail.com");
-        contact.setName("jcaido");
+        contact.setName("Cristóbal Rosa Arjona");
         contact.setUrl("https://github.com/jcaido");
 
         Info info = new Info()
-                .title("Render demo API REST")
+                .title("Mi Taller API REST")
                 .version("1.0")
                 .contact(contact)
-                .description("API REST demo");
+                .description("API REST taller de reparación de vehículos");
 
         return new OpenAPI().info(info);
     }
